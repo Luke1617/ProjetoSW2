@@ -22,15 +22,38 @@
     <div class="row">
 
     <div class="col-sm-4">
-        <h1>Admistrador</h1>
+        <h1 class="bg-primary text-warning">Admistrador</h1>
+        <p class="text-primary">
+    Utilize esta opção para realizar o cadastro 
+    de novos administradores, ou edita-los.
+        </p>
     </div>
 
     <div class="col-sm-4">
-    <h1>Categorias</h1>
+    <h1 class="bg-danger">Categorias</h1>
+    <p class="text-danger">
+        Utilize esta opção para cadastrar as Categorias
+        dos produtos que serão vendidos on-line.
+    </p>
 </div>
 
 <div class="col-sm-4">
-<h1>Forcenador</h1>
+<h1 class="bg-success">Forcenador</h1>
+<p class="text-success">
+    Utilize esta opção para cadastrar os fornecedores
+    dos produtos que serão vendidos on-line.
+</p>
+</div>
+</div>
+
+
+    <div class="row">
+    <div class="col-sm-6">
+    <h1>Produtos</h1>
+</div>
+
+<div class="col-sm-6">
+    <h1>Vendas</h1>
 </div>
 
 </div>

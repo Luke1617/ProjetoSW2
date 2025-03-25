@@ -76,6 +76,9 @@
         Utilize está para visualizar as Vendas
         realizadas pelos clientes.
     </p>
+    <p>
+            <a href="#" class="btn btn-secondary">Clique Aqui</a>
+</p>
 </div>
 
 </div>

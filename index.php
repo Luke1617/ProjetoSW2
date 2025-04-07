@@ -81,6 +81,15 @@
 </p>
 </div>
 
+<div class="col-sm-6">
+    <h1 class="bg-danger">Formas de Pagamento</h1>
+    <p class="text-danger"> 
+        Utilize está para visualizar as formas de pagamento.
+    </p>
+    <p>
+            <a href="formapagamento.php" class="btn btn-danger">Clique Aqui</a>
+</p>
+</div>
 </div>
 </div>
 </body>

@@ -24,23 +24,19 @@
                     include "conexao.php";
                     
                     $nome= $_REQUEST["nome"];
-                    $login= $_REQUEST["login"];
-                    $senha= md5( $_REQUEST["senha"]);
-            echo "Nome do Administrador: $nome <br>
-            Login: $login <br>
-            Senha: $senha <br>";
+                
+            echo "Nome da Categoria: $nome <br>";
+         
 
-            $sql="insert into administrador(nome, login, senha)
-            values(:nome, :login, :senha)";
+            $sql="insert into categoria(nome)
+            values(:nome)";
 
             
             $result= $conexao->prepare($sql);
             $result->bindValue(":nome", $nome);
-            $result->bindValue(":login", $login);
-            $result->bindValue(":senha", $senha);
             $result->execute();
 
-            echo "<p> O administrador foi cadastrado com sucesso!</P>";
+            echo "<p> A Categoria foi cadastrado com sucesso!</P>";
 
          ?>
 </div>

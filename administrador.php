@@ -38,8 +38,8 @@
 
                     <p>
                         <input type="submit" value="Cadastrar" class="btn btn-primary">
-                        <input type="reset" value="Limpar" class="btn btn-success">
-                        <a href="index.php" class="btn btn-secondary">Voltar</a>
+                        <input type="reset" value="Limpar" class="btn btn-primary">
+                        <a href="index.php" class="btn btn-primary">Voltar</a>
                     </p>
 
                 </form>

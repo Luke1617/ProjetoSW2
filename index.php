@@ -22,7 +22,7 @@
     <div class="row">
 
     <div class="col-sm-4">
-        <h1 class="bg-primary text-warning">Admistrador</h1>
+        <h1 class="bg-primary">Admistrador</h1>
         <p class="text-primary">
     Utilize esta opção para realizar o cadastro 
     de novos administradores, ou edita-los.
@@ -82,12 +82,12 @@
 </div>
 
 <div class="col-sm-6">
-    <h1 class="bg-danger">Formas de Pagamento</h1>
-    <p class="text-danger"> 
+    <h1 class="bg-info">Formas de Pagamento</h1>
+    <p class="text-info"> 
         Utilize está para visualizar as formas de pagamento.
     </p>
     <p>
-            <a href="formapagamento.php" class="btn btn-danger">Clique Aqui</a>
+            <a href="formapagamento.php" class="btn btn-info">Clique Aqui</a>
 </p>
 </div>
 </div>

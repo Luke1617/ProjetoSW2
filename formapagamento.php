@@ -11,13 +11,13 @@
 </head>
 <body>
     
-    <div class="bg-danger text-white p-3 text-center">
+    <div class="bg-info text-white p-3 text-center">
         <h1>Formas de Pagamento</h1>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-8 mx-auto mt-3 border border-danger">
+            <div class="col-sm-8 mx-auto mt-3 border border-info">
                 <h3 class="text-center p-3">Preencha os dados abaixo</h3>
 
                 <form action="formapagamento_cadastro.php">
@@ -27,9 +27,9 @@
                     </p>
 
                     <p>
-                        <input type="submit" value="Cadastrar" class="btn btn-danger">
-                        <input type="reset" value="Limpar" class="btn btn-danger">
-                        <a href="index.php" class="btn btn-danger">Voltar</a>
+                        <input type="submit" value="Cadastrar" class="btn btn-info">
+                        <input type="reset" value="Limpar" class="btn btn-info">
+                        <a href="index.php" class="btn btn-info">Voltar</a>
                     </p>
 
                 </form>

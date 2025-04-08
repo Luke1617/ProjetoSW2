@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 07-Abr-2025 às 17:57
+-- Tempo de geração: 08-Abr-2025 às 10:58
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -110,6 +110,26 @@ INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
 (2, 'Gilbert'),
 (3, 'Gilbert'),
 (4, 'Gilbert');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `produto`
+--
+
+DROP TABLE IF EXISTS `produto`;
+CREATE TABLE IF NOT EXISTS `produto` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(200) NOT NULL,
+  `precocusto` float(10,2) NOT NULL,
+  `precovenda` float(10,2) NOT NULL,
+  `codcategoria` int NOT NULL,
+  `codfornecedor` int NOT NULL,
+  `imagem1` varchar(200) NOT NULL,
+  `imagem2` varchar(200) NOT NULL,
+  `imagem3` varchar(200) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

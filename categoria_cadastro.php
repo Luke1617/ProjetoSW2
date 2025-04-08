@@ -39,6 +39,7 @@
             echo "<p> A Categoria foi cadastrado com sucesso!</P>";
 
          ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
 </div>
 
             </div>

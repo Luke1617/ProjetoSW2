@@ -23,24 +23,31 @@
                     <?php 
                     include "conexao.php";
                     
-                    $nome= $_REQUEST["nome"];
-                    $login= $_REQUEST["login"];
-                    $senha= md5( $_REQUEST["senha"]);
-            echo "Nome do Administrador: $nome <br>
-            Login: $login <br>
-            Senha: $senha <br>";
+                    $descricao= $_REQUEST["descricao"];
+                    $precocusto= $_REQUEST["precocusto"];
+                    $precovenda= $_REQUEST["precovenda"];
+                    $codcategoria= $_REQUEST["codcategoria"];
+                    $codfornecedor= $_REQUEST["codfornecedor"];
+                    
+            echo "Nome do Produto: $descricao <br>
+            Preço de Custo: $precocusto <br>
+            Preço de Venda: $precovenda <br>
+            Categoria: $codcategoria <br>
+            Fornecedor: $codfornecedor <br>";
 
-            $sql="insert into administrador(nome, login, senha)
-            values(:nome, :login, :senha)";
+            $sql="insert into produto(descricao, precocusto, precovenda,codcategoria, codfornecedor )
+            values(:descricao, :precocusto, :precovenda, :codcategoria, :codfornecedor)";
 
             
             $result= $conexao->prepare($sql);
-            $result->bindValue(":nome", $nome);
-            $result->bindValue(":login", $login);
-            $result->bindValue(":senha", $senha);
+            $result->bindValue(":descricao", $descricao);
+            $result->bindValue(":precocusto", $precocusto);
+            $result->bindValue(":precovenda", $precovenda);
+            $result->bindValue(":codcategoria", $codcategoria);
+            $result->bindValue(":codfornecedor", $codfornecedor);
             $result->execute();
 
-            echo "<p> O administrador foi cadastrado com sucesso!</P>";
+            echo "<p> O Produto foi cadastrado com sucesso!</p>";
 
          ?>
           <a href="index.php" class="btn btn-primary">Voltar</a>

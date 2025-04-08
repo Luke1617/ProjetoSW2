@@ -36,9 +36,10 @@
             $result->bindValue(":nome", $nome);
             $result->execute();
 
-            echo "<p> O Fornecedor foi cadastrado com sucesso!</P>";
+            echo "<p> O Fornecedor foi cadastrado com sucesso!</p>";
 
          ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
 </div>
 
             </div>

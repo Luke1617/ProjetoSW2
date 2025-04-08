@@ -36,9 +36,10 @@
             $result->bindValue(":nome", $nome);
             $result->execute();
 
-            echo "<p> A Forma de Pagamento foi cadastrado  com sucesso!</P>";
+            echo "<p> A Forma de Pagamento foi cadastrado  com sucesso!</p>";
 
          ?>
+          <a href="index.php" class="btn btn-primary">Voltar</a>
 </div>
 
             </div>

@@ -29,7 +29,8 @@
         </p>
 
         <p>
-            <a href="administrador.php" class="btn btn-primary">Clique Aqui</a>
+            <a href="administrador.php" class="btn btn-primary">Cadastro</a>
+            <a href="administrador_pesquisa.php" class="btn btn-primary">Pesquisa</a>
 </p>
     </div>
 

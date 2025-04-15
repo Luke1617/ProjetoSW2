@@ -12,8 +12,8 @@
 <body>
     
 
-<div class="bg-primary text-white p-3 text-center">
-        <h1>Pesquisa de Administradores</h1>
+<div class="bg-warning text-white p-3 text-center">
+        <h1>Pesquisa de Produtos</h1>
     </div>
 
     <div class="container">
@@ -23,15 +23,18 @@
             <table class="table">
                 <tr>
                   <th>Codigo</th> 
-                  <th>Nome</th> 
-                  <th>Login</th>    
+                  <th>Descrição</th>  
+                  <th>Preço de custo</th>  
+                  <th>Preço de venda</th>  
+                  <th>Código de categoria</th>  
+                  <th>Código de fornecedor</th>  
                 </tr>
 
         <?php
 
 include "conexao.php";
 
-$sql= "select*from administrador";
+$sql= "select*from produto";
 
 $result=$conexao->prepare($sql);
 $result->execute();
@@ -42,8 +45,11 @@ while($linha=$result->fetch(PDO::FETCH_ASSOC))
                 <tr>
 
                 <td><?=$linha["codigo"]?></td>
-                <td><?=$linha["nome"]?></td>
-                <td><?=$linha["login"]?></td>
+                <td><?=$linha["descricao"]?></td>
+                <td><?=$linha["precovenda"]?></td>
+                <td><?=$linha["precocusto"]?></td>
+                <td><?=$linha["codcategoria"]?></td>
+                <td><?=$linha["codfornecedor"]?></td>
                 </tr>
          <?php
  }
@@ -52,7 +58,7 @@ while($linha=$result->fetch(PDO::FETCH_ASSOC))
             </table>
 
             <p>
-                <a href="index.php" class="btn btn-primary">Voltar</a>
+                <a href="index.php" class="btn btn-warning">Voltar</a>
 </p>
 
             </div>

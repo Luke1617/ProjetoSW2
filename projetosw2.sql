@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 15-Abr-2025 às 10:59
+-- Tempo de geração: 15-Abr-2025 às 13:53
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
   `codigo` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `fornecedor`
@@ -114,7 +114,8 @@ INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
 (2, 'Gilbert'),
 (3, 'Gilbert'),
 (4, 'Gilbert'),
-(5, 'Luke');
+(5, 'Luke'),
+(6, 'Bloberta');
 
 -- --------------------------------------------------------
 

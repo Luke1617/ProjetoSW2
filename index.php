@@ -70,7 +70,7 @@
 
     <p>
             <a href="produto.php" class="btn btn-warning">Cadastro</a>
-            <a href="produto_pesquisa.php" class="btn btn-warning">Pesquisar</a>
+            <a href="produto_pesquisa.php" class="btn btn-warning">Pesquisa</a>
 </p>
 </div>
 

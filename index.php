@@ -81,7 +81,8 @@
         realizadas pelos clientes.
     </p>
     <p>
-            <a href="#" class="btn btn-secondary">Clique Aqui</a>
+            <a href="#" class="btn btn-secondary">Cadastro</a>
+            <a href="#" class="btn btn-secondary">Pesquisa</a>
 </p>
 </div>
 

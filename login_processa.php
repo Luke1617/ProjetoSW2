@@ -15,7 +15,12 @@ $result->execute();
 
 if ($linha = $result->fetch(PDO::FETCH_ASSOC))
 {
-    echo"Login realizado com Sucesso!";
+    //echo"Login realizado com Sucesso!";
+    session_start();
+    $_SESSION["nome"] = $linha["nome"];
+
+
+    header("location :index.php");
 }
 else
 {
